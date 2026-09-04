@@ -1,0 +1,537 @@
+{
+  "vehicle_info": {
+    "year": 1997,
+    "make": "Chevrolet",
+    "model": "Blazer",
+    "engine_types": ["5.7L V8", "4.3L V6", "4.3L V6 Vortec"],
+    "obd_version": "OBD2"
+  },
+  "p_codes": {
+    "P0010": {
+      "title": "Camshaft Position Actuator Circuit Bank 1",
+      "description": "Problem with camshaft timing on bank 1",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Check engine light", "Rough idle", "Poor fuel economy", "Difficult starting"],
+      "causes": ["Faulty VVT solenoid", "Wiring issues", "Low oil pressure", "Timing chain problems"]
+    },
+    "P0012": {
+      "title": "Camshaft Position Timing Over-Retarded Bank 1",
+      "description": "Camshaft timing is more retarded than desired",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Engine hesitation", "Reduced power", "Check engine light"],
+      "causes": ["Worn timing chain", "Failed VVT solenoid", "Oil control problems"]
+    },
+    "P0101": {
+      "title": "Mass Airflow Sensor Range/Performance",
+      "description": "MAF sensor not reading correctly",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Stalling", "Poor acceleration", "Check engine light"],
+      "causes": ["Dirty MAF sensor", "Vacuum leak", "Air intake leak", "Failed MAF sensor"]
+    },
+    "P0102": {
+      "title": "Mass Airflow Sensor Circuit Low Input",
+      "description": "MAF sensor signal voltage too low",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Engine won't start", "Severe hesitation", "Stalling"],
+      "causes": ["Faulty MAF sensor", "Wiring short", "Engine control module problem"]
+    },
+    "P0103": {
+      "title": "Mass Airflow Sensor Circuit High Input",
+      "description": "MAF sensor signal voltage too high",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rich fuel mixture", "Black smoke from exhaust", "Poor fuel economy"],
+      "causes": ["Contaminated MAF sensor", "Wiring open circuit", "Bad ECM"]
+    },
+    "P0110": {
+      "title": "Intake Air Temperature Sensor Circuit",
+      "description": "IAT sensor malfunction",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Poor fuel economy", "Rough idle", "Hard starting"],
+      "causes": ["Faulty IAT sensor", "Wiring corrosion", "Engine control module issue"]
+    },
+    "P0112": {
+      "title": "Intake Air Temperature Sensor Circuit Low",
+      "description": "IAT sensor reading too cold",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Rich running condition", "Black smoke", "Poor acceleration"],
+      "causes": ["Shorted sensor", "Wiring problem", "Failed IAT sensor"]
+    },
+    "P0113": {
+      "title": "Intake Air Temperature Sensor Circuit High",
+      "description": "IAT sensor reading too hot",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Lean condition", "Hard starting", "Hesitation"],
+      "causes": ["Open circuit", "Bad connector", "Faulty IAT sensor"]
+    },
+    "P0116": {
+      "title": "Engine Coolant Temperature Sensor Range/Performance",
+      "description": "ECT sensor out of range",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Overheating", "Poor fuel economy", "Hard starting", "Check engine light"],
+      "causes": ["Faulty ECT sensor", "Thermostat stuck", "Coolant leak", "Wiring issues"]
+    },
+    "P0117": {
+      "title": "Engine Coolant Temperature Sensor Circuit Low",
+      "description": "ECT sensor signal too low",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Engine runs rich", "Black smoke", "Poor economy"],
+      "causes": ["Shorted ECT sensor", "Wiring short", "ECM problem"]
+    },
+    "P0118": {
+      "title": "Engine Coolant Temperature Sensor Circuit High",
+      "description": "ECT sensor signal too high",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Engine runs lean", "Hesitation", "Hard starting"],
+      "causes": ["Open circuit", "Bad sensor connection", "Faulty ECT sensor"]
+    },
+    "P0120": {
+      "title": "Throttle Position Sensor Circuit",
+      "description": "TPS malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Hesitation", "Poor acceleration", "Rough idle", "Stalling"],
+      "causes": ["Dirty throttle body", "Failed TPS", "Wiring corrosion", "Vacuum leak"]
+    },
+    "P0122": {
+      "title": "Throttle Position Sensor Circuit Low",
+      "description": "TPS signal voltage too low",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Engine won't accelerate", "Stalling", "Hesitation"],
+      "causes": ["Shorted TPS", "Bad wiring", "ECM issue"]
+    },
+    "P0123": {
+      "title": "Throttle Position Sensor Circuit High",
+      "description": "TPS signal voltage too high",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["High idle speed", "Poor fuel economy", "Surging"],
+      "causes": ["Open circuit", "Bad sensor", "Wiring problem"]
+    },
+    "P0128": {
+      "title": "Coolant Thermostat (Coolant Temp Below Thermostat Regulating Temp)",
+      "description": "Engine not reaching operating temperature",
+      "severity": "high",
+      "blazer_specific": true,
+      "symptoms": ["Poor fuel economy", "Rough idle", "Cold running"],
+      "causes": ["Stuck open thermostat", "Failed water pump", "Bad ECT sensor"]
+    },
+    "P0130": {
+      "title": "Oxygen Sensor Circuit",
+      "description": "O2 sensor malfunction on bank 1",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Poor fuel economy", "Rough idle", "Hesitation", "Check engine light"],
+      "causes": ["Failed O2 sensor", "Exhaust leak", "Wiring issues", "Bad ECM"]
+    },
+    "P0133": {
+      "title": "Oxygen Sensor Circuit Slow Response Bank 1",
+      "description": "O2 sensor responding too slowly to fuel changes",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Poor fuel economy", "Hesitation", "Stumbling on acceleration"],
+      "causes": ["Aging O2 sensor", "Carbon buildup on sensor", "Engine problems"]
+    },
+    "P0134": {
+      "title": "Oxygen Sensor Circuit No Activity Bank 1",
+      "description": "O2 sensor not generating voltage",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Check engine light", "Poor fuel economy", "Black smoke"],
+      "causes": ["Failed O2 sensor", "Wiring open", "ECM malfunction"]
+    },
+    "P0135": {
+      "title": "Oxygen Sensor Heater Circuit Bank 1",
+      "description": "O2 sensor heater element malfunction",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Slow engine warmup", "Check engine light"],
+      "causes": ["Failed heater element", "Wiring short", "Fuse issue"]
+    },
+    "P0141": {
+      "title": "Oxygen Sensor Heater Circuit Bank 1 Sensor 2",
+      "description": "Downstream O2 sensor heater malfunction",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Check engine light", "Slightly poor economy"],
+      "causes": ["Failed O2 sensor heater", "Wiring problem", "Relay issue"]
+    },
+    "P0200": {
+      "title": "Fuel Injector Circuit",
+      "description": "General fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Misfiring", "Poor acceleration", "Stalling"],
+      "causes": ["Failed fuel injector", "Wiring issue", "Fuel pressure problem", "ECM fault"]
+    },
+    "P0201": {
+      "title": "Fuel Injector Circuit Cylinder 1",
+      "description": "Cylinder 1 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0202": {
+      "title": "Fuel Injector Circuit Cylinder 2",
+      "description": "Cylinder 2 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0203": {
+      "title": "Fuel Injector Circuit Cylinder 3",
+      "description": "Cylinder 3 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0204": {
+      "title": "Fuel Injector Circuit Cylinder 4",
+      "description": "Cylinder 4 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0205": {
+      "title": "Fuel Injector Circuit Cylinder 5",
+      "description": "Cylinder 5 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0206": {
+      "title": "Fuel Injector Circuit Cylinder 6",
+      "description": "Cylinder 6 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0207": {
+      "title": "Fuel Injector Circuit Cylinder 7",
+      "description": "Cylinder 7 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0208": {
+      "title": "Fuel Injector Circuit Cylinder 8",
+      "description": "Cylinder 8 fuel injector malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Misfiring", "Rough running", "Power loss"],
+      "causes": ["Clogged injector", "Failed injector", "Wiring problem"]
+    },
+    "P0300": {
+      "title": "Random/Multiple Cylinder Misfire Detected",
+      "description": "Engine is misfiring across multiple cylinders",
+      "severity": "critical",
+      "blazer_specific": true,
+      "symptoms": ["Rough idle", "Severe hesitation", "Power loss", "Check engine light flashing"],
+      "causes": ["Bad spark plugs", "Failed ignition coil", "Low fuel pressure", "Vacuum leak", "Compression issue"]
+    },
+    "P0301": {
+      "title": "Cylinder 1 Misfire Detected",
+      "description": "Cylinder 1 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0302": {
+      "title": "Cylinder 2 Misfire Detected",
+      "description": "Cylinder 2 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0303": {
+      "title": "Cylinder 3 Misfire Detected",
+      "description": "Cylinder 3 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0304": {
+      "title": "Cylinder 4 Misfire Detected",
+      "description": "Cylinder 4 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0305": {
+      "title": "Cylinder 5 Misfire Detected",
+      "description": "Cylinder 5 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0306": {
+      "title": "Cylinder 6 Misfire Detected",
+      "description": "Cylinder 6 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0307": {
+      "title": "Cylinder 7 Misfire Detected",
+      "description": "Cylinder 7 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0308": {
+      "title": "Cylinder 8 Misfire Detected",
+      "description": "Cylinder 8 is misfiring",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Hesitation", "Power loss"],
+      "causes": ["Bad spark plug", "Failed coil pack", "Fuel injector problem", "Compression issue"]
+    },
+    "P0335": {
+      "title": "Crankshaft Position Sensor Circuit",
+      "description": "CKP sensor malfunction",
+      "severity": "critical",
+      "blazer_specific": false,
+      "symptoms": ["Engine won't start", "Stalling", "No spark"],
+      "causes": ["Failed CKP sensor", "Wiring damage", "Reluctor ring damage", "ECM problem"]
+    },
+    "P0340": {
+      "title": "Camshaft Position Sensor Circuit",
+      "description": "CMP sensor malfunction",
+      "severity": "critical",
+      "blazer_specific": false,
+      "symptoms": ["Engine won't start", "Stalling", "Poor cold start"],
+      "causes": ["Failed CMP sensor", "Wiring issue", "Timing chain problem", "Bad ECM"]
+    },
+    "P0401": {
+      "title": "EGR Flow Insufficient",
+      "description": "EGR system not flowing enough exhaust gas",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Rough idle", "Knock/ping", "Check engine light"],
+      "causes": ["Clogged EGR valve", "Carbon buildup", "EGR passages blocked", "Bad EGR solenoid"]
+    },
+    "P0404": {
+      "title": "EGR Circuit Range/Performance",
+      "description": "EGR system performance out of range",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Hesitation", "Knocking", "Rough idle"],
+      "causes": ["Faulty EGR valve", "Wiring problem", "Carbon deposit", "Vacuum leak"]
+    },
+    "P0440": {
+      "title": "Evaporative Emission System Malfunction",
+      "description": "EVAP system not sealing properly",
+      "severity": "low",
+      "blazer_specific": false,
+      "symptoms": ["Gas smell", "Check engine light"],
+      "causes": ["Loose gas cap", "EVAP canister leak", "Bad purge valve", "Wiring issue"]
+    },
+    "P0442": {
+      "title": "Evaporative Emission System Leak Detected (Small)",
+      "description": "Small leak detected in EVAP system",
+      "severity": "low",
+      "blazer_specific": false,
+      "symptoms": ["Slight gas smell", "Check engine light"],
+      "causes": ["Loose/damaged gas cap", "Small hose leak", "Bad seal"]
+    },
+    "P0455": {
+      "title": "Evaporative Emission System Leak Detected (Large)",
+      "description": "Large leak detected in EVAP system",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Strong gas smell", "Check engine light"],
+      "causes": ["Cracked EVAP canister", "Broken hose", "Bad purge valve"]
+    },
+    "P0500": {
+      "title": "Vehicle Speed Sensor Malfunction",
+      "description": "VSS circuit malfunction",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Speedometer not working", "No cruise control", "Transmission shifting hard"],
+      "causes": ["Failed VSS", "Wiring problem", "Reluctor ring issue", "Transmission problems"]
+    },
+    "P0505": {
+      "title": "Idle Control System Malfunction",
+      "description": "Engine idle speed not controlled properly",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Rough idle", "Stalling", "High idle speed"],
+      "causes": ["Dirty throttle body", "Vacuum leak", "Failed IAC valve", "Bad ECM"]
+    },
+    "P0600": {
+      "title": "Serial Communication Link Error",
+      "description": "Problem with ECM communication",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Multiple check engine lights", "No communications", "Various symptoms"],
+      "causes": ["Bad ECM", "Wiring harness problem", "Connector corrosion"]
+    },
+    "P0705": {
+      "title": "Transmission Range Sensor Circuit",
+      "description": "TR sensor malfunction",
+      "severity": "high",
+      "blazer_specific": true,
+      "symptoms": ["Transmission won't shift", "Hard shifting", "No reverse", "Check engine light"],
+      "causes": ["Failed TR sensor", "Wiring issue", "Transmission problem", "Bad ECM"]
+    },
+    "P1133": {
+      "title": "Oxygen Sensor Insufficient Activity Bank 1 Sensor 1",
+      "description": "O2 sensor producing insufficient switching",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Poor fuel economy", "Hesitation", "Check engine light"],
+      "causes": ["Aging O2 sensor", "Carbon buildup", "Exhaust leak", "Fuel system issue"]
+    },
+    "P1351": {
+      "title": "No Sync Signal Detected (Chevy/GM Code)",
+      "description": "No synchronization signal from transmission",
+      "severity": "critical",
+      "blazer_specific": true,
+      "symptoms": ["No spark", "Engine won't start", "Stalling"],
+      "causes": ["Bad CMP sensor", "Wiring damage", "Failed ignition control module", "Bad ECM"]
+    },
+    "P1380": {
+      "title": "Electronic Brake Control Module Malfunction",
+      "description": "ABS module problem",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["ABS light on", "Brake pulsing", "Soft brake pedal"],
+      "causes": ["Failed ABS module", "Wiring issue", "Wheel speed sensor problem", "Brake fluid low"]
+    },
+    "P1400": {
+      "title": "EGR Valve Position Error (Chevy/GM Code)",
+      "description": "EGR valve position sensor out of range",
+      "severity": "medium",
+      "blazer_specific": true,
+      "symptoms": ["Rough idle", "Hesitation", "Check engine light"],
+      "causes": ["Failed EGR position sensor", "Carbon buildup", "Wiring problem"]
+    },
+    "P1441": {
+      "title": "EVAP System Flow During Non-Purge (Chevy/GM Code)",
+      "description": "EVAP canister purging when not commanded",
+      "severity": "low",
+      "blazer_specific": true,
+      "symptoms": ["Gas smell", "Check engine light"],
+      "causes": ["Bad purge solenoid", "Wiring issue", "Stuck valve"]
+    }
+  },
+  "b_codes": {
+    "B1000": {
+      "title": "Vehicle Speed Signal",
+      "description": "Body system speed signal problem",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["Speedometer not working", "Dashboard issues"],
+      "causes": ["VSS circuit problem", "Body control module issue"]
+    },
+    "B1003": {
+      "title": "HVAC Head Pressure Sensor",
+      "description": "Air conditioning head pressure sensor malfunction",
+      "severity": "medium",
+      "blazer_specific": false,
+      "symptoms": ["AC compressor cycling", "Poor AC cooling"],
+      "causes": ["Failed pressure sensor", "AC refrigerant issue", "Wiring problem"]
+    },
+    "B1026": {
+      "title": "Driver Door Ajar Switch",
+      "description": "Driver door ajar signal problem",
+      "severity": "low",
+      "blazer_specific": false,
+      "symptoms": ["Door ajar light always on", "Check engine light"],
+      "causes": ["Bad door switch", "Wiring corrosion", "Bad connector"]
+    }
+  },
+  "c_codes": {
+    "C0034": {
+      "title": "ABS System Fault",
+      "description": "Anti-lock brake system malfunction",
+      "severity": "high",
+      "blazer_specific": true,
+      "symptoms": ["ABS light on", "Brake pulsing", "Reduced brake performance"],
+      "causes": ["Failed ABS module", "Wheel speed sensor problem", "Wiring issue", "Brake fluid low"]
+    },
+    "C0035": {
+      "title": "Wheel Speed Sensor Front Left",
+      "description": "Front left wheel speed sensor malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["ABS light on", "Traction control off"],
+      "causes": ["Failed wheel speed sensor", "Wiring damage", "Wheel bearing issue"]
+    },
+    "C0036": {
+      "title": "Wheel Speed Sensor Front Right",
+      "description": "Front right wheel speed sensor malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["ABS light on", "Traction control off"],
+      "causes": ["Failed wheel speed sensor", "Wiring damage", "Wheel bearing issue"]
+    },
+    "C0041": {
+      "title": "Wheel Speed Sensor Rear Left",
+      "description": "Rear left wheel speed sensor malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["ABS light on", "Traction control off"],
+      "causes": ["Failed wheel speed sensor", "Wiring damage", "Wheel bearing issue"]
+    },
+    "C0042": {
+      "title": "Wheel Speed Sensor Rear Right",
+      "description": "Rear right wheel speed sensor malfunction",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["ABS light on", "Traction control off"],
+      "causes": ["Failed wheel speed sensor", "Wiring damage", "Wheel bearing issue"]
+    }
+  },
+  "u_codes": {
+    "U0100": {
+      "title": "Lost Communication with Engine Control Module",
+      "description": "Communication failure with ECM",
+      "severity": "critical",
+      "blazer_specific": false,
+      "symptoms": ["Engine won't start", "No spark", "Multiple DTCs"],
+      "causes": ["Failed ECM", "Wiring harness damage", "Connector corrosion", "Broken CAN bus"]
+    },
+    "U0109": {
+      "title": "Lost Communication with Transmission Control Module",
+      "description": "Communication failure with TCM",
+      "severity": "critical",
+      "blazer_specific": true,
+      "symptoms": ["Transmission won't shift", "Limp mode", "Hard shifting"],
+      "causes": ["Failed TCM", "CAN bus problem", "Wiring issue", "Failed body control module"]
+    },
+    "U0121": {
+      "title": "Lost Communication with Body Control Module",
+      "description": "Communication failure with BCM",
+      "severity": "high",
+      "blazer_specific": false,
+      "symptoms": ["Multiple system failures", "Lights not working", "Power windows fail"],
+      "causes": ["Failed BCM", "CAN bus wiring damage", "Connector corrosion"]
+    }
+  }
+}
